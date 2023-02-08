@@ -1,2 +1,2 @@
-# Phoenix-Impact.github.io
+# phoenix-impact.github.io
 Company website
