@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Tabbed Content</title>
+    <title>Phoenix Impact</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            margin: 0;
+            padding: 0;
             font-family: Arial, sans-serif;
             background-color: #f8f8f8;
-            margin: 0;
         }
 
         .container {
-            width: 100%;
-            max-width: 600px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: stretch;
         }
 
         .tabs {
             display: flex;
-            justify-content: space-between;
-            border-bottom: 1px solid #ddd;
+            flex-direction: column;
+            background-color: #f1f1f1;
+            padding: 12px;
         }
 
         button {
@@ -32,10 +32,10 @@
             border: none;
             outline: none;
             cursor: pointer;
-            padding: 12px 20px;
             font-size: 16px;
-            color: #777;
+            color: #555;
             transition: color 0.3s;
+            margin-bottom: 10px;
         }
 
         button:hover {
@@ -48,8 +48,11 @@
         }
 
         .tab-content {
+            flex: 1;
             padding: 20px;
             display: none;
+            color: #333;
+            overflow-y: auto;
         }
 
         .tab-content.active {
@@ -67,12 +70,39 @@
         }
 
         .tab-content img {
-            width: auto;
+            width: 100%;
             height: auto;
             max-width: 100%;
             max-height: 100%;
-            border-radius: 8px;
             cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .tab-content .profile-picture {
+            max-width: 200px;
+            max-height: 200px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .tab-content .linkedin-button {
+            background-color: #0e76a8;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .tab-content .linkedin-button:hover {
+            background-color: #095c81;
         }
 
         .image-expanded {
@@ -140,7 +170,9 @@
 
         <div id="aboutUs" class="tab-content active">
             <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor fermentum quam, ac malesuada ligula auctor sed.</p>
+            <img src="linkedin.png" alt="Profile Picture" id="profileImage" class="profile-picture" />
+            <p></p>
+            <a href="https://www.linkedin.com/in/victor-jiang-3126344/" target="_blank" class="linkedin-button">Visit LinkedIn</a>
         </div>
 
         <div id="ourMission" class="tab-content">
@@ -155,7 +187,8 @@
 
         <div id="contactUs" class="tab-content">
             <h2>Contact Us</h2>
-            <p>Donec aliquet justo a est luctus, eget facilisis lectus viverra. Curabitur dapibus odio sit amet iaculis fermentum.</p>
+            <p>By phone: +61 421 983 354</p>
+            <p>By email: victortaojiang@yahoo.com</p>
         </div>
     </div>
 
