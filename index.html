@@ -10,8 +10,8 @@
             background-color: #f8f8f8;
         }
 
-        h3{
-            font-weight: normal;
+        .body-text {
+            font-size: 20px !important;
         }
 
         .container {
@@ -53,7 +53,9 @@
 
         .tab-content {
             flex: 1;
-            padding: 20px;
+            padding-top: 60px;
+            padding-left: 100px;
+            padding-right: 100px;
             display: none;
             color: #333;
             overflow-y: auto;
@@ -85,8 +87,16 @@
         .tab-content .profile-picture {
             max-width: 200px;
             max-height: 200px;
-            cursor: pointer;
+            cursor: default;
             margin-top: 20px;
+        }
+
+        .tab-content .digital-transformation{
+            max-width: 1060px;
+            max-height: 1060px;
+            padding-top: 20px;
+            padding-left: 70px;
+            cursor: pointer;
         }
 
         .tab-content .linkedin-button {
@@ -169,30 +179,43 @@
             <button id="aboutUs-button" onclick="showTab('aboutUs')">About Us</button>
             <button id="ourMission-button" onclick="showTab('ourMission')">Our Mission</button>
             <button id="ourSolution-button" onclick="showTab('ourSolution')">Our Solution</button>
+            <button id="caseStudy-button" onclick="showTab('caseStudy')">Case Study</button>
             <button id="contactUs-button" onclick="showTab('contactUs')">Contact Us</button>
         </div>
 
         <div id="aboutUs" class="tab-content active">
             <h2>About Us</h2>
             <img src="linkedin.png" alt="Profile Picture" id="profileImage" class="profile-picture" />
-            <p></p>
+            <p class="body-text">With deep experience in leading transformation and building leadership teams, we specialize in developing digital leadership and best practice for cutting-edge digital transformation and helping SMEs win in the digital era. 
+            <br><br>
+            We are also a partner of the <a href="http://lighthousegroup.co/" target="_blank">Lighthouse Group</a>, offering suite of leadership services and capability programs.</p>
             <a href="https://www.linkedin.com/in/victor-jiang-3126344/" target="_blank" class="linkedin-button">Visit LinkedIn</a>
         </div>
 
         <div id="ourMission" class="tab-content">
             <h2>Our Mission</h2>
-            <h3>To lead the way in digital transformation through an innovative new framework of velocity, value, agility, and leadership. To provide for clients the direction and leadership needed to succeed as a business in the digital era.</h3>
+            <p class="body-text">To grow, today's business must harness digital technology, form partnerships in the digital ecosystem,  and build workforce of the future. Yet, most business face challenges in terms of understanding the digital impact in its totality, managing inter-dependencies between tech, organisation and people or executing digital transformation to its full potential. 
+            <br><br>
+            Our mission is to partner with our SME clients, win the challenge and lead their teams into the future.</p>
         </div>
 
         <div id="ourSolution" class="tab-content">
             <h2>Our Solution</h2>
-            <img src="digitaltransformation.png" alt="Digital Transformation" id="solutionImage" onclick="expandImage('solutionImage')" />
+            <p class ="body-text">Our solution adopts a proprietary framework to address four strategic components of digital transformation: Value, Leadership, Agility and Velocity as illustrated in the diagram below. 
+            <br><br>
+            Our partnership with our clients with a strategic diagnostic which provides an assessment of clients' readiness and gaps. 
+            <img src="digitaltransformation.png" alt="Digital Transformation" id="solutionImage" onclick="expandImage('solutionImage')" class="digital-transformation"/>
+        </div>
+
+        <div id="caseStudy" class="tab-content">
+            <h2>Case Study</h2>
+            <p class="body-text">Bla bla bla bla Bla bla bla bla Bla bla bla bla</p>
         </div>
 
         <div id="contactUs" class="tab-content">
             <h2>Contact Us</h2>
-            <p>By phone: +61 421 983 354</p>
-            <p>By email: victortaojiang@yahoo.com</p>
+            <p class="body-text">By phone: +61 421 983 354</p>
+            <p class="body-text">By email: victortaojiang@yahoo.com</p>
         </div>
     </div>
 
