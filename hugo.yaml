@@ -1,0 +1,35 @@
+baseURL: 'https://phoeniximpact.com.au/'
+title: 'Phoenix Impact'
+languageCode: en-us
+DefaultContentLanguage: en
+enableEmoji: true
+enableGitInfo: true
+enableRobotsTXT: true
+canonifyURLs: true
+paginate: 9
+enableInlineShortcodes: true
+
+params:
+  author: Victor Jiang
+  author_image: /images/defaults/author.jpg
+  og_image: /images/defaults/featured_image.jpg
+  moto: "Leading the Future, Today"
+  description: "At Phoenix Impact, we empower businesses to thrive in a rapidly evolving world. We combine timeless leadership principles and a digital, AI mindset to drive transformative change in businesses across industries. "
+  google_analytics_id: '' # @NOTE: To remove the G2A tag, juste leave this key to an empty string.
+  cta:
+    text: Book a meeting
+    url: mailto:victortaojiang@yahoo.com
+
+taxonomies:
+  category: Categories
+  tag: Tags
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+module:
+  hugoVersion:
+    extended: true
+    min: "0.110.0"
