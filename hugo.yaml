@@ -18,7 +18,7 @@ params:
   google_analytics_id: '' # @NOTE: To remove the G2A tag, juste leave this key to an empty string.
   cta:
     text: Book a meeting
-    url: mailto:victortaojiang@yahoo.com
+    url: mailto:victor@lighthousegroup.co
 
 taxonomies:
   category: Categories
