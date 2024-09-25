@@ -18,4 +18,6 @@ At the end of this webinar, you will be able to:
 - Identify potential applications of AI in the insurance industry and recognize examples of AI usage, fostering an understanding of its practical implications in their professional context.
 - Discuss how AI can impact their work tasks, including assistance, transformation, or replacement, and evaluate its implications for individual roles and responsibilities, thereby facilitating informed decision-making and adaptation to AI-driven changes.
 
-[Register](https://anziif.com/professional-development/events/anziif-webinar-unlock-the-power-of-ai)
+{{< youtube bA41ZUertvE >}}
+
+[Link (event over)](https://anziif.com/professional-development/events/anziif-webinar-unlock-the-power-of-ai)
