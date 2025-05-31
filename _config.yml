@@ -8,7 +8,7 @@ logo:
   mobile_width: "32px"
   desktop: "images/logo/logo.svg"
   desktop_height: "50px"
-  desktop_width: "100px"
+  desktop_width: "50px"
 
 home: 
   limit_posts: 6
