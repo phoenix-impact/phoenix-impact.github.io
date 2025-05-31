@@ -1,12 +1,61 @@
 <div class='header'>
   <div class="container">
     <div class="logo">
-      <a href="{{ '/' | relative_url }}"><img width="{{ site.logo.desktop_width }}" height="{{ site.logo.desktop_height }}" alt="{{ site.title }}" src="{{ site.logo.desktop | relative_url }}" /></a>
+      <a href="{{ '/' | relative_url }}" class="logo-link">
+        <img width="{{ site.logo.desktop_width }}" height="{{ site.logo.desktop_height }}" alt="{{ site.title }}" src="{{ site.logo.desktop | relative_url }}" />
+      </a>
     </div>
     <div class="logo-mobile">
-      <a href="{{ '/' | relative_url }}"><img width="{{ site.logo.mobile_width }}" height="{{ site.logo.mobile_height }}" alt="{{ site.title }}" src="{{ site.logo.mobile | relative_url }}" /></a>
+      <a href="{{ '/' | relative_url }}" class="logo-link">
+        <img width="{{ site.logo.mobile_width }}" height="{{ site.logo.mobile_height }}" alt="{{ site.title }}" src="{{ site.logo.mobile | relative_url }}" />
+      </a>
     </div>
     {% include main-menu.html %}
     {% include hamburger.html %}
   </div>
 </div>
+
+<style>
+/* Ensure logo links are always clickable */
+.logo-link {
+  display: block !important;
+  pointer-events: auto !important;
+  position: relative !important;
+  z-index: 999 !important;
+}
+
+.logo-link img {
+  display: block;
+  pointer-events: none; /* Prevent image from intercepting clicks */
+}
+</style>
+
+<script>
+// Simple, robust logo link handler
+(function() {
+  function handleLogoClick(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    window.location.href = '{{ "/" | relative_url }}';
+    return false;
+  }
+  
+  function setupLogoLinks() {
+    var logoLinks = document.querySelectorAll('.logo-link');
+    for (var i = 0; i < logoLinks.length; i++) {
+      logoLinks[i].onclick = handleLogoClick;
+      logoLinks[i].addEventListener('click', handleLogoClick, true);
+    }
+  }
+  
+  // Run immediately if DOM is ready, otherwise wait
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setupLogoLinks);
+  } else {
+    setupLogoLinks();
+  }
+  
+  // Also run after full page load as backup
+  window.addEventListener('load', setupLogoLinks);
+})();</div>
+
