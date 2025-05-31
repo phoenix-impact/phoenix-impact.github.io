@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Leadership consultation",
+    "description": "Receive leadership coaching from one of our tested experts",
+    "image": {
+      "url": "images/features/noun_branding_1885335.svg",
+      "width": 80,
+      "height": 80
+    }
+  },
+  {
+    "title": "AI literacy",
+    "description": "Understand how Artificial Intelligence can empower your business and keep you ahead",
+    "image": {
+      "url": "images/features/noun_The Process_1885341.svg",
+      "width": 80,
+      "height": 80
+    }
+  },
+  {
+    "title": "Digital Transformation",
+    "description": "Transform your business in the digital age",
+    "image": {
+      "url": "images/features/noun_3d modeling_1885342.svg",
+      "width": 80,
+      "height": 80
+    }
+  }
+]

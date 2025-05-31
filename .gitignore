@@ -1,10 +1,18 @@
-node_modules/
-resources/
-public/
-.hugo_build.lock
-.vercel
-yarn-error.log
-# Local Netlify folder
-.netlify
-yarn-error.log
+# Jekyll
+_site
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile.lock
+**/Gemfile.lock
+
+# Temporary files
+tmp
 .DS_Store
+Desktop.ini
+._*
+Thumbs.db
+.Spotlight-V100
+.Trashes
+.idea
