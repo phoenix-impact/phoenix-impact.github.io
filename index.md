@@ -3,7 +3,6 @@ title: Phoenix Impact Mission
 layout: home
 no_footer: true
 intro_image: "images/illustrations/banner.svg"
-intro_image_absolute: true
 intro_image_hide_on_mobile: true
 show_call_box: false
 ---
