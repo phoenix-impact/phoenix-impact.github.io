@@ -25,6 +25,7 @@ bodyClass: "page-posts"
             <h2 class="post-title">
                 <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
             </h2>
+            <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
             <p>{{ post.excerpt | markdownify | strip_html | truncate: 100 }}</p>
         </li>
         {% endfor %}

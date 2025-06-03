@@ -16,4 +16,6 @@ At Phoenix Impact, we offer tailored services aligned with the four key drivers 
 
 - Leadership: We provide leadership roadmap consulting and individual coaching to develop the talent and mindset needed to lead in an AI-enabled world.
 
-Start your journey by taking our free AI Innovation Scorecard below – a powerful diagnostic tool to assess your organisation’s readiness and identify high-impact opportunities.
+Start your journey by taking our free AI Innovation Scorecard [**below**](#scroll-half) – a powerful diagnostic tool to assess your organisation’s readiness and identify high-impact opportunities.
+
+<a id="scroll-half" href="#" onclick="window.scrollBy(0, window.innerHeight); return false;"></a>

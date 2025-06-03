@@ -19,22 +19,25 @@ bodyClass: "page-services"
   </div>
 </div>
 
-<div class="container">
-  <div class="row">
-    {% for service in site.services %}
-    <div class="col-12 col-md-6 mb-3">
-      <div class="service service-summary">
-        <div class="service-content">
-          <h2 class="service-title">
-            <a href="{{ service.url | relative_url }}">{{ service.title }}</a>
-          </h2>
-          <p>{{ service.excerpt | markdownify | strip_html | truncate: 100 }}</p>
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-</div>
+<div  data-sa-url="https://c655dcd4-adf4-47a3-ba06-7709a694adb3.scoreapp.com/?sa_target=_top" data-sa-view="inline" style="max-width: 100%; width: 100%" data-sa-auto-height="1"></div>
+<script src="https://static.scoreapp.com/js/integration/v1/embedding.js?v=Errk9U"></script>
+
+<!-- <div class="container"> -->
+<!--   <div class="row"> -->
+<!--     {% for service in site.services %} -->
+<!--     <div class="col-12 col-md-6 mb-3"> -->
+<!--       <div class="service service-summary"> -->
+<!--         <div class="service-content"> -->
+<!--           <h2 class="service-title"> -->
+<!--             <a href="{{ service.url | relative_url }}">{{ service.title }}</a> -->
+<!--           </h2> -->
+<!--           <p>{{ service.excerpt | markdownify | strip_html | truncate: 100 }}</p> -->
+<!--         </div> -->
+<!--       </div> -->
+<!--     </div> -->
+<!--     {% endfor %} -->
+<!--   </div> -->
+<!-- </div> -->
 
 <div id="fullscreenModal" class="fullscreen-modal" tabindex="-1">
   <img src="" alt="Fullscreen image">
