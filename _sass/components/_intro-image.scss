@@ -3,6 +3,8 @@
   height: auto;
   margin-top: -40px;
   margin-left: -100px;
+  position: inherit;
+  z-index: -999;
 }
 .intro-image-hide-mobile {
   display: none;
