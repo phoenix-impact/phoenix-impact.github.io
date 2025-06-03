@@ -6,6 +6,6 @@ description: Posts
 # intro_image_hide_on_mobile: true
 ---
 
-# Musings on Innovation
+# Posts
 
-Webinars and writings on innovation and AI.
+As AI continues to evolve at a rapid pace, so too must our thinking. This space is where I share insights, reflections, and emerging perspectives on the intersection of AI, innovation, and leadership.

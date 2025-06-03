@@ -5,15 +5,21 @@ bodyClass: "page-services"
 
 <div class="intro">
   <div class="container">
-    <div class="row justify-content-start">
-      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+    <div class="row justify-content-start align-items-center">
+      <div class="col-12 col-md-9 order-md-1 pr-0">
         {{ content }}
+      </div>
+
+      <div class="col-12 col-md-3 order-md-2 mb-4 mb-md-0 service-image-wrapper">
+        <a href="/images/ai_clover.jpg" class="fullscreen-link">
+          <img src="/images/ai_clover.jpg" class="img-fluid rounded shadow service-image">
+        </a>
       </div>
     </div>
   </div>
 </div>
 
-<div class="container pt-6 pb-6">
+<div class="container">
   <div class="row">
     {% for service in site.services %}
     <div class="col-12 col-md-6 mb-3">
@@ -29,3 +35,37 @@ bodyClass: "page-services"
     {% endfor %}
   </div>
 </div>
+
+<div id="fullscreenModal" class="fullscreen-modal" tabindex="-1">
+  <img src="" alt="Fullscreen image">
+</div>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('fullscreenModal');
+    const modalImg = modal.querySelector('img');
+
+    document.querySelectorAll('.fullscreen-link').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        modalImg.src = link.href;
+        modal.classList.add('show');
+        modal.focus();
+      });
+    });
+
+    modal.addEventListener('click', () => {
+      modal.classList.remove('show');
+      modalImg.src = '';
+    });
+
+    modal.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        modal.classList.remove('show');
+        modalImg.src = '';
+      }
+    });
+  });
+</script>
+
