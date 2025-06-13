@@ -1,5 +1,5 @@
 ---
-title: Phoenix Impact Mission
+title: Phoenix Impact Innovation Consulting
 layout: home
 no_footer: true
 intro_image: "images/illustrations/banner.svg"
