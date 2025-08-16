@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Contact</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
+      <!-- Google Fonts CDN -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+      <!-- Self host font -->
+      <!-- <link rel="preload" href="/assets/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin> -->
+      <link href="/assets/css/style.css" rel="stylesheet">
+      
+      <meta name="description" content="Contact" />
+      
+      
+      <meta property="og:title" content="Contact"/>
+      
+      <meta property="og:type" content="website"/>
+      <meta property="og:url" content=""/>
+      
+      
+      <meta property="og:description" content="Contact"/>
+      
+      <meta name="twitter:card" content="summary"/>
+      
+      
+   </head>
+   <body class='page page-contact'>
+      <div id="main-menu-mobile" class="main-menu-mobile">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+    <li class="">
+      <a href="/services/">Services</a>
+    </li>
+    
+    <li class="">
+      <a href="/posts/">Posts</a>
+    </li>
+    
+    <li class="active">
+      <a href="/contact/">Contact</a>
+    </li>
+    
+  </ul>
+</div>
+
+      <div id="wrapper" class="wrapper">
+         <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img width="50px" height="50px" alt="Phoenix Impact" src="/images/logo/logo.svg" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img width="32px" height="32px" alt="Phoenix Impact" src="/images/logo/logo-mobile.svg" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+    <li class="">
+      <a href="/services/">Services</a>
+    </li>
+    
+    <li class="">
+      <a href="/posts/">Posts</a>
+    </li>
+    
+    <li class="active">
+      <a href="/contact/">Contact</a>
+    </li>
+    
+  </ul>
+</div>
+
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+
+
+  </div>
+</div>
+
+         <style>
+  .contact-form {
+    max-width: 500px;
+    margin: 3rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+  }
+
+  .contact-form h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .form-group {
+    margin-bottom: 1.25rem;
+  }
+
+  .form-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 0.5rem;
+  }
+
+  .form-control {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    background-color: white;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .form-control:focus {
+    outline: none;
+    border-color: #dc2626;
+    box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
+  }
+
+  textarea.form-control {
+    resize: vertical;
+    min-height: 120px;
+  }
+
+  .btn-primary {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    background-color: #dc2626;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+  .btn-primary:hover {
+    background-color: #b91c1c;
+  }
+</style>
+
+<div class="content">
+  <form action="https://formspree.io/f/xqabzyyo" method="POST" class="contact-form">
+    <h2>We'd love to hear from you!</h2>
+    
+    <div class="form-group">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control" id="name" name="name" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="message" class="form-label">Message</label>
+      <textarea class="form-control" id="message" name="message" required></textarea>
+    </div>
+    
+    <button type="submit" class="btn-primary">Send Message</button>
+  </form>
+</div>
+
+      </div>
+      
+      <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <h2 class="footer-title">Phoenix Impact</h2>
+          <ul>
+            
+            
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            
+            <li class="active">
+              <a href="/contact/">Contact</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          
+          
+          <div class="copyright"></div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+      <script type="text/javascript" src="/assets/js/scripts.js"></script>
+      
+   </body>
+</html>
+
