@@ -4,13 +4,15 @@
       <meta charset="utf-8">
       <title>{% if page.title %}{{page.title}}{% else %}{{ site.title | escape }}{% endif %}</title>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="theme-color" content="#e5261f">
+      <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+      <link rel="dns-prefetch" href="https://fonts.gstatic.com">
       <link rel="icon" type="image/png" href="{{ '/images/favicon-32x32.svg' | relative_url }}">
-      <!-- Google Fonts CDN -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-      <!-- Self host font -->
-      <!-- <link rel="preload" href="{{ '/assets/fonts/playfair-display.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin> -->
+      <link rel="preload" href="{{ '/assets/css/style.css' | relative_url }}" as="style">
+      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"></noscript>
       <link href="{{ '/assets/css/style.css' | relative_url }}" rel="stylesheet">
       {% if page.description %}
       <meta name="description" content="{{ page.description }}" />
@@ -37,17 +39,19 @@
       {% endif %}
    </head>
    <body class='page {{layout.bodyClass}}'>
+      <a class="skip-link" href="#main-content">Skip to main content</a>
       {% include main-menu-mobile.html %}
       <div id="wrapper" class="wrapper">
-         {% include header.html headerClass='header-extra' %}
-         {{content}}
+         {% include header.html headerClass='header-sticky' %}
+         <main id="main-content" tabindex="-1">
+            {{content}}
+         </main>
       </div>
       {% unless page.no_footer %}
       {% include footer.html %}
       {% include sub-footer.html %}
       {% endunless %}
-      <script type="text/javascript" src="{{ '/assets/js/scripts.js' | relative_url }}"></script>
+      <script defer src="{{ '/assets/js/scripts.js' | relative_url }}"></script>
       {% include google-analytics.html %}
    </body>
 </html>
-

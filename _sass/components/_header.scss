@@ -1,23 +1,40 @@
 .header {
   color: $primary;
-  background-color: #ffffff;
+  background-color: rgba(#ffffff, 0.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // box-shadow: 0 1px 15px rgba(50, 50, 93, 0.2);
-  border-bottom: 1px solid $white-offset;
-  padding: 10px 0px;
+  border-bottom: 1px solid transparent;
+  padding: 10px 0;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
+  &.header-sticky {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+  }
+
+  &.header-scrolled {
+    border-bottom-color: rgba($primary, 0.1);
+    box-shadow: 0 4px 24px rgba($black, 0.06);
+    background-color: rgba(#ffffff, 0.96);
+  }
+
   &.header-absolute {
     position: absolute;
     z-index: 10;
     width: 100%;
   }
 }
+
 .lock-scroll {
   .header {
     &.header-absolute {

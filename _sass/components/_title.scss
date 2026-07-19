@@ -1,8 +1,20 @@
 .title {
   color: $black;
-  font-size: 48px;
-  line-height: 1.2;
-  @include media-breakpoint-up(lg) {
-    font-size: 50px;
+  font-size: clamp(2rem, 4vw, 3.125rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.5rem;
+}
+
+.page-basic,
+.page-about {
+  .content p {
+    text-align: justify;
+  }
+}
+
+.page-about {
+  .about-portrait {
+    box-shadow: 0 12px 40px rgba($black, 0.12);
   }
 }

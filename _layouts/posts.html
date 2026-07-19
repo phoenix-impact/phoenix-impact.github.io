@@ -3,7 +3,7 @@ layout: default
 bodyClass: "page-posts"
 ---
 
-<div class="intro">
+<div class="intro intro-small">
     <div class="container">
         <div class="row justify-content-start">
             <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
@@ -11,24 +11,24 @@ bodyClass: "page-posts"
             </div>
             {% if page.intro_image %}
             <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
-                <img alt="{{ page.title }}" class="intro-image{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relative_url }}" />
+                <img alt="" class="intro-image{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relative_url }}" loading="lazy" decoding="async" width="800" height="600" />
             </div>
             {% endif %}
         </div>
     </div>
 </div>
 
-<div class="container pt-6 pb-6">
+<div class="container pt-6 pb-6 pb-md-10">
     <ul class="post-list">
         {% for post in site.posts %}
-        <li class="post post-summary mb-4">
+        <li class="post post-summary">
             <h2 class="post-title">
                 <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
             </h2>
             <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
-            <p>{{ post.excerpt | markdownify | strip_html | truncate: 100 }}</p>
+            <p class="post-excerpt">{{ post.excerpt | markdownify | strip_html | truncate: 100 }}</p>
+            <a class="post-read-more" href="{{ post.url | relative_url }}" aria-label="Read {{ post.title }}">Read more</a>
         </li>
         {% endfor %}
     </ul>
 </div>
-

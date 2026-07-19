@@ -82,18 +82,21 @@ $sub-footer-text-color: $white;
 @import "pages/page-home";
 @import "pages/page-post";
 @import "pages/page-service";
+@import "pages/page-contact";
+
+@import "global";
 
 body {
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.65;
   font-family: $font-family-base;
+  color: $black;
+  background-color: $white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   @include media-breakpoint-up(md) {
     font-size: 16px;
-    line-height: 1.3;
+    line-height: 1.65;
   }
-}
-
-html {
-    scrollbar-width: none;
 }
 

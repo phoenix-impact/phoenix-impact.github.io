@@ -2,11 +2,11 @@
   .content {
     > p {
       &:first-of-type {
-        font-size: 1.6rem;
-        line-height: 1.4;
+        font-size: 1.25rem;
+        line-height: 1.6;
         margin-bottom: 40px;
-        font-weight: regular;
-        color: rgb(104, 104, 104);
+        font-weight: 400;
+        color: $steel;
       }
     }
   }
@@ -16,10 +16,90 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  display: grid;
+  gap: 1.25rem;
+
+  @include media-breakpoint-up(md) {
+    gap: 1.5rem;
+  }
 }
 
 .post-list .post-summary {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 1.5rem;
+  border: 1px solid rgba($primary, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  background: $white;
+  box-shadow: 0 4px 20px rgba($black, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba($black, 0.08);
+    border-color: rgba($primary, 0.2);
+  }
 }
 
+.post-list .post-title {
+  margin-bottom: 0.5rem;
+  font-size: 1.35rem;
+
+  a {
+    color: $black;
+    text-decoration: none;
+
+    &:hover {
+      color: $primary;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+  }
+}
+
+.post-list .post-date {
+  font-size: 0.875rem;
+  color: rgba($steel, 0.85);
+  margin-bottom: 0.75rem;
+}
+
+.post-list .post-excerpt {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.post-read-more {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: $primary;
+  text-decoration: none;
+
+  &::after {
+    content: "→";
+    margin-left: 0.35rem;
+    transition: transform 0.2s ease;
+  }
+
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+
+    &::after {
+      transform: translateX(3px);
+    }
+  }
+}
+
+.post-single {
+  .post-date {
+    font-size: 0.9375rem;
+    color: rgba($steel, 0.85);
+    margin-bottom: 1.5rem;
+  }
+}
+
+.page-posts {
+  .intro {
+    background: linear-gradient(180deg, $white-offset 0%, $white 100%);
+  }
+}

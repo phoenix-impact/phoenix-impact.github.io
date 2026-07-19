@@ -6,42 +6,42 @@
   padding-bottom: 60px;
   overflow: hidden;
   @include media-breakpoint-up(md) {
-    padding-top: 140px;
-    padding-bottom: 140px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
   h1 {
     color: $black;
-    font-size: 42px;
+    font-size: clamp(2rem, 5vw, 3.125rem);
     font-weight: bold;
-    line-height: 1.2;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.25rem;
     @include media-breakpoint-up(md) {
-      width: 80%;
-      font-size: 48px;
-    }
-    @include media-breakpoint-up(lg) {
-      font-size: 50px;
+      width: 90%;
     }
   }
   h2 {
-    width: 80%;
+    width: 90%;
     font-size: 1.2rem;
-    line-height: 1.4;
+    line-height: 1.5;
     margin-bottom: 30px;
     color: $black;
     font-family: $font-family-base;
   }
   p {
-    font-size: 1.2rem;
-    font-weight: light;
-    line-height: 1.5;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.65;
     color: $steel;
-    @include media-breakpoint-up(md) {
-      // width: 80%;
-    }
+    max-width: 38rem;
   }
 }
 
 .intro-small {
-  padding-top: 100px;
-  padding-bottom: 30px;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  @include media-breakpoint-up(md) {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
 }
