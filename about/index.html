@@ -4,13 +4,15 @@
       <meta charset="utf-8">
       <title>About</title>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="theme-color" content="#e5261f">
+      <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+      <link rel="dns-prefetch" href="https://fonts.gstatic.com">
       <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
-      <!-- Google Fonts CDN -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-      <!-- Self host font -->
-      <!-- <link rel="preload" href="/assets/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin> -->
+      <link rel="preload" href="/assets/css/style.css" as="style">
+      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"></noscript>
       <link href="/assets/css/style.css" rel="stylesheet">
       
       <meta name="description" content="About" />
@@ -29,75 +31,104 @@
       
    </head>
    <body class='page page-basic'>
-      <div id="main-menu-mobile" class="main-menu-mobile">
+      <a class="skip-link" href="#main-content">Skip to main content</a>
+      <nav id="main-menu-mobile" class="main-menu-mobile" aria-label="Mobile primary" aria-hidden="true">
   
   <ul>
     
+    
+    
+    
     <li class="active">
-      <a href="/about/">About</a>
+      <a href="/about/" aria-current="page">About</a>
     </li>
+    
+    
+    
     
     <li class="">
       <a href="/services/">Services</a>
     </li>
     
+    
+    
+    
     <li class="">
       <a href="/posts/">Posts</a>
     </li>
+    
+    
+    
     
     <li class="">
       <a href="/contact/">Contact</a>
     </li>
     
   </ul>
-</div>
+</nav>
 
       <div id="wrapper" class="wrapper">
-         <div class='header'>
+         <header class="header header-sticky" role="banner">
   <div class="container">
     <div class="logo">
-      <a href="/"><img width="50px" height="50px" alt="Phoenix Impact" src="/images/logo/logo.svg" /></a>
+      <a href="/" aria-label="Phoenix Impact home">
+        <img width="50px" height="50px" alt="Phoenix Impact" src="/images/logo/logo.svg" />
+      </a>
     </div>
     <div class="logo-mobile">
-      <a href="/"><img width="32px" height="32px" alt="Phoenix Impact" src="/images/logo/logo-mobile.svg" /></a>
+      <a href="/" aria-label="Phoenix Impact home">
+        <img width="32px" height="32px" alt="Phoenix Impact" src="/images/logo/logo-mobile.svg" />
+      </a>
     </div>
-    <div id="main-menu" class="main-menu">
+    <nav id="main-menu" class="main-menu" aria-label="Primary">
   
   <ul>
     
+    
+    
+    
     <li class="active">
-      <a href="/about/">About</a>
+      <a href="/about/" aria-current="page">About</a>
     </li>
+    
+    
+    
     
     <li class="">
       <a href="/services/">Services</a>
     </li>
     
+    
+    
+    
     <li class="">
       <a href="/posts/">Posts</a>
     </li>
+    
+    
+    
     
     <li class="">
       <a href="/contact/">Contact</a>
     </li>
     
   </ul>
-</div>
+</nav>
 
-    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-menu-mobile">
   <span class="hamburger-box">
     <span class="hamburger-inner"></span>
   </span>
 </button>
 
-
   </div>
-</div>
+</header>
 
-         <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+         <main id="main-content" tabindex="-1">
+            <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
     <div class="row justify-content-start">
         <div class="col-12 col-md-3 order-md-2 mb-4 mb-md-0 text-md-end">
-            <img src="/images/victor.jpg" alt="Victor" class="img-fluid rounded shadow">
+            <img src="/images/victor.jpg" alt="Victor" class="img-fluid rounded shadow about-portrait" width="2528" height="3018" loading="lazy" decoding="async">
         </div>
 
         <div class="col-12 col-md-8 order-md-1">
@@ -119,7 +150,7 @@
     </div>
 </div>
 
-
+         </main>
       </div>
       
       <div class="footer">
@@ -161,8 +192,8 @@
   </div>
 </div>
       
-      <script type="text/javascript" src="/assets/js/scripts.js"></script>
+      <script defer src="/assets/js/scripts.js"></script>
       
+
    </body>
 </html>
-
