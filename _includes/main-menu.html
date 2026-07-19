@@ -1,17 +1,10 @@
-<nav id="main-menu" class="main-menu" aria-label="Primary">
+<div id="main-menu" class="main-menu">
   {% assign mainmenu = site.data.menus.main | sort: 'weight'  %}
   <ul>
     {% for item in mainmenu %}
-    {% assign item_path = item.url | relative_url %}
-    {% assign is_active = false %}
-    {% if page.url == item.url or page.url == item_path %}
-      {% assign is_active = true %}
-    {% elsif item.url != '/' and page.url contains item.url %}
-      {% assign is_active = true %}
-    {% endif %}
-    <li class="{% if is_active %}active{% endif %}">
-      <a href="{{ item_path }}"{% if is_active %} aria-current="page"{% endif %}>{{ item.name }}</a>
+    <li class="{% if item.url == page.url %}active{% endif %}">
+      <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
     </li>
     {% endfor %}
   </ul>
-</nav>
+</div>

@@ -1,25 +1,11 @@
 .intro-image {
-  width: 120%;
-  max-width: none;
+  width: 140%;
   height: auto;
-  margin-top: -20px;
-  margin-left: -60px;
-  position: relative;
-  pointer-events: none;
-  user-select: none;
-
-  @include media-breakpoint-up(md) {
-    width: 130%;
-    margin-left: -80px;
-  }
-
-  @include media-breakpoint-up(lg) {
-    width: 140%;
-    margin-top: -40px;
-    margin-left: -100px;
-  }
+  margin-top: -40px;
+  margin-left: -100px;
+  position: inherit;
+  z-index: -999;
 }
-
 .intro-image-hide-mobile {
   display: none;
   @include media-breakpoint-up(md) {

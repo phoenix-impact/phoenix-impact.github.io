@@ -1,29 +1,14 @@
 .hamburger {
   padding: 10px 0 10px 10px;
+  outline: none;
   z-index: 30;
   cursor: pointer;
-  border: none;
-  background: transparent;
-  border-radius: 6px;
-  transition: background-color 0.2s ease;
-
   @include media-breakpoint-up(md) {
     display: none;
   }
-
-  &:hover {
-    background-color: rgba($primary, 0.06);
-  }
-
   &:focus {
     outline: none;
   }
-
-  &:focus-visible {
-    outline: 2px solid $primary;
-    outline-offset: 3px;
-  }
-
   .hamburger-inner,
   .hamburger-inner::before,
   .hamburger-inner::after {
