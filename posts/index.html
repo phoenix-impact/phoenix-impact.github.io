@@ -4,15 +4,13 @@
       <meta charset="utf-8">
       <title>Posts</title>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta name="theme-color" content="#e5261f">
-      <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-      <link rel="dns-prefetch" href="https://fonts.gstatic.com">
       <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
+      <!-- Google Fonts CDN -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link rel="preload" href="/assets/css/style.css" as="style">
-      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-      <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"></noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+      <!-- Self host font -->
+      <!-- <link rel="preload" href="/assets/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin> -->
       <link href="/assets/css/style.css" rel="stylesheet">
       
       <meta name="description" content="Posts" />
@@ -31,101 +29,72 @@
       
    </head>
    <body class='page page-posts'>
-      <a class="skip-link" href="#main-content">Skip to main content</a>
-      <nav id="main-menu-mobile" class="main-menu-mobile" aria-label="Mobile primary" aria-hidden="true">
+      <div id="main-menu-mobile" class="main-menu-mobile">
   
   <ul>
-    
-    
-    
     
     <li class="">
       <a href="/about/">About</a>
     </li>
     
-    
-    
-    
     <li class="">
       <a href="/services/">Services</a>
     </li>
     
-    
-    
-    
     <li class="active">
-      <a href="/posts/" aria-current="page">Posts</a>
+      <a href="/posts/">Posts</a>
     </li>
-    
-    
-    
     
     <li class="">
       <a href="/contact/">Contact</a>
     </li>
     
   </ul>
-</nav>
+</div>
 
       <div id="wrapper" class="wrapper">
-         <header class="header header-sticky" role="banner">
+         <div class='header'>
   <div class="container">
     <div class="logo">
-      <a href="/" aria-label="Phoenix Impact home">
-        <img width="50px" height="50px" alt="Phoenix Impact" src="/images/logo/logo.svg" />
-      </a>
+      <a href="/"><img width="50px" height="50px" alt="Phoenix Impact" src="/images/logo/logo.svg" /></a>
     </div>
     <div class="logo-mobile">
-      <a href="/" aria-label="Phoenix Impact home">
-        <img width="32px" height="32px" alt="Phoenix Impact" src="/images/logo/logo-mobile.svg" />
-      </a>
+      <a href="/"><img width="32px" height="32px" alt="Phoenix Impact" src="/images/logo/logo-mobile.svg" /></a>
     </div>
-    <nav id="main-menu" class="main-menu" aria-label="Primary">
+    <div id="main-menu" class="main-menu">
   
   <ul>
-    
-    
-    
     
     <li class="">
       <a href="/about/">About</a>
     </li>
     
-    
-    
-    
     <li class="">
       <a href="/services/">Services</a>
     </li>
     
-    
-    
-    
     <li class="active">
-      <a href="/posts/" aria-current="page">Posts</a>
+      <a href="/posts/">Posts</a>
     </li>
-    
-    
-    
     
     <li class="">
       <a href="/contact/">Contact</a>
     </li>
     
   </ul>
-</nav>
+</div>
 
-    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-menu-mobile">
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
   <span class="hamburger-box">
     <span class="hamburger-inner"></span>
   </span>
 </button>
 
-  </div>
-</header>
 
-         <main id="main-content" tabindex="-1">
-            <div class="intro intro-small">
+  </div>
+</div>
+
+         <div class="intro">
     <div class="container">
         <div class="row justify-content-start">
             <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
@@ -139,59 +108,54 @@
     </div>
 </div>
 
-<div class="container pt-6 pb-6 pb-md-10">
+<div class="container pt-6 pb-6">
     <ul class="post-list">
         
-        <li class="post post-summary">
+        <li class="post post-summary mb-4">
             <h2 class="post-title">
                 <a href="/2025/08/15/aus_china_expo_2025/">ACETIE Australia-China Expo Melbourne 2025</a>
             </h2>
             <p class="post-date">August 15, 2025</p>
-            <p class="post-excerpt">For the second year in a row, I was honoured to be on stage at ACETIE Australia-China Expo Melbou...</p>
-            <a class="post-read-more" href="/2025/08/15/aus_china_expo_2025/" aria-label="Read ACETIE Australia-China Expo Melbourne 2025">Read more</a>
+            <p>For the second year in a row, I was honoured to be on stage at ACETIE Australia-China Expo Melbou...</p>
         </li>
         
-        <li class="post post-summary">
+        <li class="post post-summary mb-4">
             <h2 class="post-title">
                 <a href="/2025/05/21/acbc_roundtable/">ACBC Round Table</a>
             </h2>
             <p class="post-date">May 21, 2025</p>
-            <p class="post-excerpt">On 21 May 2025, I presented to the ACBC AI innovation round table on “AI innovation - an enterpri...</p>
-            <a class="post-read-more" href="/2025/05/21/acbc_roundtable/" aria-label="Read ACBC Round Table">Read more</a>
+            <p>On 21 May 2025, I presented to the ACBC AI innovation round table on “AI innovation - an enterpri...</p>
         </li>
         
-        <li class="post post-summary">
+        <li class="post post-summary mb-4">
             <h2 class="post-title">
                 <a href="/2024/09/19/aus_china_expo_2024/">ACETIE Australia-China Expo Melbourne 2024</a>
             </h2>
             <p class="post-date">September 19, 2024</p>
-            <p class="post-excerpt">On September 19, 2024, I moderated a panel discussion at last week’s ACETIE Australia-China Expo ...</p>
-            <a class="post-read-more" href="/2024/09/19/aus_china_expo_2024/" aria-label="Read ACETIE Australia-China Expo Melbourne 2024">Read more</a>
+            <p>On September 19, 2024, I moderated a panel discussion at last week’s ACETIE Australia-China Expo ...</p>
         </li>
         
-        <li class="post post-summary">
+        <li class="post post-summary mb-4">
             <h2 class="post-title">
                 <a href="/2024/07/20/anziif_ai_webinar/">ANZIIF AI Webinar</a>
             </h2>
             <p class="post-date">July 20, 2024</p>
-            <p class="post-excerpt">Webinar: Unlocking the Power of AI in Insurance
+            <p>Webinar: Unlocking the Power of AI in Insurance
 Discover how AI is set to revolutionise work task...</p>
-            <a class="post-read-more" href="/2024/07/20/anziif_ai_webinar/" aria-label="Read ANZIIF AI Webinar">Read more</a>
         </li>
         
-        <li class="post post-summary">
+        <li class="post post-summary mb-4">
             <h2 class="post-title">
                 <a href="/2023/12/08/transformation_trends/">Transformation Trends Event</a>
             </h2>
             <p class="post-date">December 08, 2023</p>
-            <p class="post-excerpt">I was on the Lighthouse panel on Dec 8th to discuss 2023 business transformation trends in Austra...</p>
-            <a class="post-read-more" href="/2023/12/08/transformation_trends/" aria-label="Read Transformation Trends Event">Read more</a>
+            <p>I was on the Lighthouse panel on Dec 8th to discuss 2023 business transformation trends in Austra...</p>
         </li>
         
     </ul>
 </div>
 
-         </main>
+
       </div>
       
       <div class="footer">
@@ -233,8 +197,8 @@ Discover how AI is set to revolutionise work task...</p>
   </div>
 </div>
       
-      <script defer src="/assets/js/scripts.js"></script>
+      <script type="text/javascript" src="/assets/js/scripts.js"></script>
       
-
    </body>
 </html>
+
